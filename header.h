@@ -10,9 +10,10 @@ struct node_t
     node_t *right_{nullptr};
 };
 
-void initialize(node_t *&, const std::string);
-void print(node_t *);
-double evaluate(node_t *);
-void clear(node_t *);
+void initialize(node_t *&root, const char *input);
+void printHelper(node_t *root, int place);
+void print(node_t *root);
+double evaluate(node_t *tree);
+void clear(node_t * root);
 
 #endif

@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     node_t *root = nullptr;
 
     initialize(root, "((1+((2+3)*(4+(5/6))))+((2*3)*(4-6)))");
-
+    
     print(root);
 
     assert("+" == root->value_);
